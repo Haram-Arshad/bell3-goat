@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bell3</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Montserrat', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                orange: '#FF5A1F',
-                yellow: '#FFC700',
-                dark: '#111827',
-                'dark-secondary': '#1F2937',
-              }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bell3</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              orange: '#FF5A1F',
+              yellow: '#FFC700',
+              dark: '#111827',
+              'dark-secondary': '#1F2937',
             }
           }
         }
       }
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0"
-  }
-}
-</script>
+    }
+  </script>
 </head>
-  <body class="bg-white font-sans antialiased">
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+<body class="bg-white font-sans antialiased">
+  
+  <!-- ✅ Your actual page content goes here -->
+  <section class="min-h-screen flex flex-col justify-center items-center text-center">
+    <h1 class="text-5xl font-extrabold text-brand-dark mb-4">Welcome to Bell3</h1>
+    <p class="text-lg text-gray-600 max-w-md mb-6">
+      A clean HTML + Tailwind version ready for GitHub Pages ✨
+    </p>
+    <a href="#" class="px-6 py-3 bg-brand-orange text-white rounded-lg font-medium hover:bg-brand-yellow transition">Explore Now</a>
+  </section>
+
+</body>
 </html>
