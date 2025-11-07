@@ -926,7 +926,7 @@ body {
 
 .discover-section {
   position: relative;
-  background: url('images/desk.jpg') center/cover no-repeat;
+background: url('./images/desk.jpg') center/cover no-repeat;
   height: 55vh; /* 👈 sets section height */
   min-height: 480px; /* 👈 ensures it's not too short on small screens */
   text-align: center;
