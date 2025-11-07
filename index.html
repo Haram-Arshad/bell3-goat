@@ -4,57 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Haram's Bell Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #000, #222);
-      color: white;
+      background: linear-gradient(135deg, #0a0a0a, #1a1a1a, #2c2c2c);
+      color: #f1f1f1;
       height: 100vh;
-      margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease forwards;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
-      margin-bottom: 20px;
-      font-size: 2rem;
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
       text-align: center;
+      background: linear-gradient(90deg, #fff, #888);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 1.2s ease forwards;
     }
+
+    @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
     .btn {
       display: inline-block;
       margin: 10px;
-      padding: 14px 28px;
+      padding: 14px 32px;
       font-size: 1rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 12px;
       cursor: pointer;
-      transition: 0.3s;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
+
     .btn-1 {
-      background: #4caf50;
+      background: linear-gradient(135deg, #00b894, #26de81);
       color: white;
     }
+
     .btn-2 {
-      background: #2196f3;
+      background: linear-gradient(135deg, #0984e3, #74b9ff);
       color: white;
     }
+
     .btn:hover {
-      transform: scale(1.05);
-      opacity: 0.9;
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
+      animation: fadeIn 1.5s ease forwards;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Project</h1>
+  <h1>Welcome to Haram's Bell Project 🔔</h1>
   <div>
-<button class="btn btn-1" onclick="window.open('https://haram-arshad.github.io/bell3-goat/bell3-html-version/', '_blank')">
-  🔔 Open Bell Website
-</button>
-
+    <button class="btn btn-1" onclick="window.open('https://haram-arshad.github.io/bell3-goat/bell3-html-version/', '_blank')">
+      🌐 Open Bell Website
+    </button>
     <button class="btn btn-2" onclick="window.open('https://github.com/Haram-Arshad/bell3-goat', '_blank')">
       💻 View on GitHub
     </button>
   </div>
+
+  <footer>Designed by Haram 💫</footer>
 </body>
 </html>
