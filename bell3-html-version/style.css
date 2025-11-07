@@ -926,7 +926,7 @@ body {
 
 .discover-section {
   position: relative;
-  background: url('/bell3-html-version/images/desk.jpg') center/cover no-repeat;
+  background: url('/images/desk.jpg') center/cover no-repeat;
   height: 55vh; /* 👈 sets section height */
   min-height: 480px; /* 👈 ensures it's not too short on small screens */
   text-align: center;
@@ -1155,7 +1155,7 @@ body {
 .connect-bg {
   position: absolute;
   inset: 0;
-  background: url('/bell3-html-version/images/bg.jpg')
+  background: url('/images/bg.jpg')
     center/cover no-repeat;
   opacity: 0.08;
   transform: translateY(0);
